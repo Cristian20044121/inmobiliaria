@@ -217,6 +217,9 @@ a {
 
 
 /* section four  */
+.section-four{
+  width: 85%;
+}
 
 .table {
     margin: auto;
@@ -256,94 +259,18 @@ a {
    td:last-of-type, th:last-of-type {
      border-right: none;
    }
-
-   .container-tables {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "title title tabla-promociones"
-    "tabla tabla tabla-promociones"
-    "tabla tabla formulario"; 
-  }
   
-.tabla { grid-area: tabla; }
-.title { grid-area: title; }
-.tabla-promociones { grid-area: tabla-promociones; }
-.formulario { grid-area: formulario; }
+
 
 
 /* contacto section four  */
 
-.contact h2 {
-    font: 300 33px/40px 'Open Sans', sans-serif;
-    color: #cfd8ee;
-    margin: 0 0 23px;
-  }
- .contact h3 {
-    font: 13px/20px 'Open Sans', sans-serif;
-    color: #e7efff;
-    margin: 0 0 6px;
-  }
-  .contact p {
-    margin-bottom: 24px;
-    font: 13px/20px 'Open Sans', sans-serif;
-  }
-  
-  .contact hr {
-      background-color: #51596d;
-      border: none;
-      height: 1px;
-      margin: 0 0 21px;
-  }
-  
-  .contact {
-    padding: 63px 85px 50px 80px;
-    color: #8391ab;
-    width: 370px;
-    background-color: #14163D;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    /* box-shadow */
-  }
-  .prefix {
-    width: 48px;
-    display: inline-block;
-  
-  }
-  .email {
-    color: #ffffff;
-    margin-left: 5px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  .email:hover {
-    color: #cfd8ee;
-    text-decoration: none;
-  }
-  
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 1285px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
-@media screen and (max-width: 900px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .info {
-    justify-content: center;
-  }
-  .card-grid-space .num {
-    /* /margin-left: 0;
-    /text-align: center; */
-  }
-}
+
+
+
+
 
 
 
@@ -420,6 +347,28 @@ a {
 
 
 
+/* ////////////////////////////////////////  */
+  
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space .num {
+    /* /margin-left: 0;
+    /text-align: center; */
+  }
+}
 
   @media only screen and (min-width: 1280px) {
     .contain {
