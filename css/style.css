@@ -15,6 +15,21 @@
     border-radius: 50%;
 }
 
+.animation-header {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.slide-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+}
+
+
+
 /* .container-title{
     clip-path: polygon(0 0, 100% 0, 100% 43%, 100% 43%, 68% 100%, 56% 62%, 0 100%, 0% 43%, 0 14%);
     background:  hsla(194, 83%, 45%, 0.187);
@@ -62,6 +77,32 @@
 
 
 /* section two  */
+
+
+
+.section-two {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.139), rgba(0, 0, 0, 0.805)), url('../img/fondo-section-two.jpg');
+  background-size: cover;
+  background-position: center;
+  /* transform: translateX(-100%); */
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+  opacity: 1;
+}
+
+
+
+.section-two.visible::before {
+  animation: none; /* Detiene la animación de carga una vez que la sección es visible */
+}
+
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -75,22 +116,47 @@
 
 .quienes-somos {
     grid-area: quienes-somos;
+    z-index: 100;
     margin-top: 20px;
 }
 
 .mision {
     grid-area: mision;
     margin-top: 20px;
+    z-index: 100;
+
 }
 
 .vision {
     grid-area: vision;
     margin-top: 20px;
+    position: relative;
+    z-index: 100;
 }
 
 
-/* section three  */
+.animation{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.animation.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* section three  */
+/* 
 a {
   color: inherit;
 }
@@ -116,7 +182,6 @@ a {
   color: white;
   border-radius: 1em;
   padding: 1em;
-  /*margin: 2em;*/
   display: flex;
   align-items: flex-end;
   background-size: cover;
@@ -213,12 +278,12 @@ a {
   margin-bottom: 1.2rem;
   margin-left: 1rem;
 }
-
+ */
 
 
 /* section four  */
 .section-four{
-  width: 85%;
+  /* width: 85%; */
 }
 
 .table {

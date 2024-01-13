@@ -16,36 +16,36 @@
 </head>
 
 <body>
-    <header class="bg-gray-800 text-white p-4">
-        <div class="container mx-auto flex items-center justify-between">
+    <header class="bg-gray-800 text-white p-10">
+        <div class="container mx-auto flex items-center justify-between ">
 
             <!-- logo  -->
             <div class="flex items-center space-x-4 lg:space-x-8 container-logo">
-                <a href="">
-                    <img src="img/logo.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55">
+                <a href="" class="animation-header visible">
+                    <img src="img/logo.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55 ">
                 </a>
-                <h1 class="text-white font-semibold text-lg lg:text-xl">Inmobiliaria</h1>
+                <h1 class="text-white font-semibold text-lg lg:text-xl animation-header visible">Inmobiliaria</h1>
             </div>
-
-            <a href="" class="hover:text-gray-300">Inicio</a>
-            <a href="" class="hover:text-gray-300">Nosotros</a>
-            <a href="" class="hover:text-gray-300">Productos Y Servicios</a>
-            <a href="" class="hover:text-gray-300">Clasificados</a>
+            <nav class="nav flex flex-row gap-5 animation-header visible">
+                <a href="" class="hover:text-gray-300">Inicio</a>
+                <a href="" class="hover:text-gray-300">Nosotros</a>
+                <a href="" class="hover:text-gray-300">Productos Y Servicios</a>
+                <a href="" class="hover:text-gray-300">Clasificados</a>
             </nav>
         </div>
     </header>
 
 
     <!-- section 1 -->
-    <button id="chatBtn" class="fixed bottom-4 right-4 text-white  rounded">
+    <button id="chatBtn" class="fixed z-50 bottom-4 right-4 text-white  rounded animation-header">
         <img src="img/zwhatssapp-x8..png" alt="" width="40">
     </button>
-    <section class="section-one pr-10 pb-10 bg-white shadow-md hover:shadow-lg transition duration-300 ease-in-out">
+    <section class="section-one pr-10 pb-10">
         <!-- <div class="container-title">
             <h1>BIENVENIDOS</h1>
         </div> -->
         <div class="flex">
-            <div class="trapecios mt-28">
+            <div class="trapecios mt-0 animation-header visible">
                 <div class="flex items-center">
                     <img src="https://img.freepik.com/fotos-premium/vista-atras-amable-gerente-lider-empresarial-agradable-hablar-dar-discurso-sus-colegas_183219-8504.jpg"
                         class="trapecio-one">
@@ -77,22 +77,22 @@
     </section>
 
     <!-- section 2  -->
-    <section class="py-10 ">
+    <section class="pt-28 pb-20 section-two visible animation" id="section-two">
         <div class="container">
-            <div class="bg-white p-6 rounded-lg shadow-lg quienes-somos">
-                <h2 class="text-2xl font-bold mb-4">QUIENES SOMOS</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg   quienes-somos animation">
+                <h2 class="text-2xl font-bold mb-4 ">QUIENES SOMOS</h2>
                 <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis quia et
                     reiciendis fugit quisquam necessitatibus totam, quod, quidem libero temporibus voluptate minus
                     molestiae incidunt culpa aperiam fugiat vel aspernatur.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg mision">
-                <h2 class="text-2xl font-bold mb-4">MISION</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg mision animation">
+                <h2 class="text-2xl font-bold mb-4 ">MISION</h2>
                 <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, harum dolorum
                     veniam dolore maiores, consectetur consequuntur odit unde perferendis assumenda excepturi
                     exercitationem! Dignissimos exercitationem nisi eligendi voluptate voluptatum modi blanditiis.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg vision">
-                <h2 class="text-2xl font-bold mb-4">VISION</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg vision animation">
+                <h2 class="text-2xl font-bold mb-4 ">VISION</h2>
                 <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est voluptatem
                     praesentium aliquam. Ipsa nam rem accusamus modi, odit officia, architecto ipsam corporis ducimus,
                     iure vero ad quibusdam sed at.</p>
@@ -101,14 +101,317 @@
     </section>
 
 
+    <!-- section products  -->
+    <section class="p-5 mt-12 animation">
+        <h2 class="text-4xl text-center font-bold text-gray-600">PRODUCTOS Y SERVICIOS</h2>
+        <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:gap-4 mt-12">
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://marinilla.arrendasoft.co/img/fotos/1920x1080_8f5b3c9313e63b148ddbce501f456392.jpeg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">FINCA <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>PRIMAVERA</span></h2>
+                <p class="text-green-500 font-bold">$480.000.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón. La propiedad cuenta con 164 m² y parqueadero</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://marinilla.arrendasoft.co/img/fotos/1920x1080_1f6a50d952857fc889ce2e9fbbce2017.jpeg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">FINCA <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>MARINILLA</span></h2>
+                <p class="text-green-500 font-bold">$940.000.000</p>
+                <p class="text-sm my-2">La finca cuenta con un área de construcción de 217.74 m², un kiosko de 36 m²</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://marinilla.arrendasoft.co/img/fotos/1920x1080_5b010fa5b7080ccf124cbf2a096ff6aa.jpeg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">FINCA <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>MARINILLA</span></h2>
+                <p class="text-green-500 font-bold">$475.000.000</p>
+                <p class="text-sm my-2">área de 54 m², con 4 habitaciones, 1 baño, cocina semi integral con mesón en madera maciza y barra</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://marinilla.arrendasoft.co/img/fotos/768x1024_45b42651208603411d5c38351d18c6a2.jpeg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">APARTAMENTO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>SABANETA</span></h2>
+                <p class="text-green-500 font-bold">$250.000.000</p>
+                <p class="text-sm my-2">2 Habitaciones, sala, comedor amplio, balcón, Piso 6, baño, parqueadero</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 tex-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+            <!-- card  -->
+            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation">
+                <img src="https://inmobiliariacyf.com/wp-content/uploads/2023/03/CaceresyFerroInmobiliaria-Caceres-Ferro-Inmobiliaria-CyF-Quindio-Armenia-Casa-Venta-23643-2.jpg"
+                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
+                <h2 class="text-lg font-bold my-2">CASA DE LUJO <br> <span class="text-red-500 text-sm"> <i
+                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
+                <p class="text-green-500 font-bold">$500.000000"</p>
+                <p class="text-sm my-2">4 Habitaciones, sala, comedor amplio, balcón, segundo piso, 62 m2, con lindos
+                    acabados</p>
+                <a href="#"
+                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold">SABER
+                    MÁS</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
     <!-- section three  -->
-    <section class="info bg-gray-400 text-white p-10">
+    <section class="info bg-gray-400 text-white p-10 animation">
         <h1 class="text-center text-4xl font-bold ">ASOCIADOS</h1> <br> <br>
         <p>Al ser asociado de nuestro portal web, adquiere nuestros productos y servicios. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Dignissimos, pariatur! Cum atque id, facere vero nesciunt culpa nostrum soluta
             neque tempore voluptas saepe ex repudiandae officiis inventore veritatis debitis consectetur.</p>
     </section>
-    <section class="cards-wrapper">
+    <div class="p-10">
+        <h2 class="text-2xl text-gray-600 font-bold">INFO SOBRE ASOCIADOS </h2>
+        <ul>
+            <li>info asociados</li>
+            <li>info asociados</li>
+            <li>info asociados</li>
+            <li>info asociados</li>
+            <li>info asociados</li>
+        </ul>
+    </div>
+    <!-- <section class="cards-wrapper">
         <div class="card-grid-space">
             <div class="num">01</div>
             <a class="card" href=""
@@ -209,7 +512,7 @@
             </a>
         </div>
 
-    </section>
+    </section> -->
     <section class="bg-gray-400 text-white p-10">
         <div>
             <p class="text-xl">Animate aprovechar de estos exclentes servicios y productos de lata calidad y precio,
@@ -221,10 +524,10 @@
 
 
     <section class="mt-12">
-        <h2 class="text-4xl font-bold text-gray-800">Inmuebles En Oferta:</h2>
+        <h2 class="text-4xl font-bold text-gray-800 pl-5">Inmuebles En Oferta:</h2>
 
         <!-- section four  -->
-        <div class="mx-auto flex flex-col sm:flex-row  justify-between section-four p-5">
+        <div class="flex flex-col sm:flex-row  justify-between section-four p-5">
 
             <div>
                 <table class="table">
@@ -364,65 +667,91 @@
             <div>
                 <div class="">
                     <h1 class="text-2xl font-bold mb-4">Promociones Inmobiliaria</h1>
-                
-                    <table class="min-w-full bg-white border border-gray-300 rounded-lg overflow-hidden">
-                      <thead class="bg-gray-200">
-                        <tr>
-                          <th class="py-2 px-4 border-b">Promoción</th>
-                          <th class="py-2 px-4 border-b">Descripción</th>
-                          <th class="py-2 px-4 border-b">Descuento</th>
-                          <th class="py-2 px-4 border-b">Válido Hasta</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="py-2 px-4 border-b">Casa de Ensueño</td>
-                          <td class="py-2 px-4 border-b">Amplia casa con vistas impresionantes</td>
-                          <td class="py-2 px-4 border-b">$10,000 de descuento</td>
-                          <td class="py-2 px-4 border-b">31/12/2024</td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 px-4 border-b">Departamento Moderno</td>
-                          <td class="py-2 px-4 border-b">Diseño contemporáneo en el corazón de la ciudad</td>
-                          <td class="py-2 px-4 border-b">5% de descuento</td>
-                          <td class="py-2 px-4 border-b">15/02/2025</td>
-                        </tr>
-                        <tr>
-                          <td class="py-2 px-4 border-b">Lotes en Oferta</td>
-                          <td class="py-2 px-4 border-b">Adquiere tu propio terreno a un precio increíble</td>
-                          <td class="py-2 px-4 border-b">20% de descuento</td>
-                          <td class="py-2 px-4 border-b">30/06/2025</td>
-                        </tr>
-                      </tbody>
+
+                    <table class="bg-white border border-gray-300 rounded-lg overflow-hidden w-75">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th class="py-2 px-4 border-b">Promoción</th>
+                                <th class="py-2 px-4 border-b">Descuento</th>
+                                <th class="py-2 px-4 border-b">Válido Hasta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Casa de Ensueño</td>
+
+                                <td class="py-2 px-4 border-b">$70% de descuento</td>
+                                <td class="py-2 px-4 border-b">31/12/2024</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Departamento Moderno</td>
+
+                                <td class="py-2 px-4 border-b">5% de descuento</td>
+                                <td class="py-2 px-4 border-b">15/02/2025</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Lotes en Oferta</td>
+
+                                <td class="py-2 px-4 border-b">20% de descuento</td>
+                                <td class="py-2 px-4 border-b">30/06/2025</td>
+                            </tr>
+                        </tbody>
                     </table>
-                  </div>
+
+                </div>
 
                 <div class="pt-4 flex-col justify-center">
-                    <div class="max-w-xs">
+                    <div class="w-50">
                         <div class="bg-gray-800 text-white p-4 mb-4">
-                            <h1 class="text-2xl font-bold">CONTACT US</h1>
-                            <h3 class="text-sm">Fill out the form below to learn more!</h3>
+                            <h1 class="text-2xl font-bold">CONTACTANOS AHORA</h1>
+                            <h3 class="text-sm">Con excelente atención al cliente!</h3>
                         </div>
 
                         <form action="#" class="bg-white shadow-md rounded px-4 pt-6 pb-8 mb-4">
-                            <!-- Form fields go here, similar to the original form -->
-
                             <div class="mb-4">
-                                <label for="first_name" class="block text-gray-700 text-sm font-bold mb-2">First
-                                    Name</label>
-                                <input type="text" name="first_name" placeholder="John"
+                                <label for="full_name" class="block text-gray-700 text-sm font-bold mb-2">Nombre
+                                    Completo</label>
+                                <input type="text" name="full_name" placeholder="Cristian caro"
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                             </div>
 
-                            <!-- More form fields ... -->
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                                <input type="email" name="email" placeholder="cristian@example.com"
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                            </div>
 
                             <div class="mb-4">
-                                <input type="submit" value="Submit"
+                                <label for="tel" class="block text-gray-700 text-sm font-bold mb-2">Número De
+                                    Teléfono</label>
+                                <div class="flex items-center border rounded w-full">
+                                    <select name="country_code"
+                                        class="border-r appearance-none py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                        <option value="+1">+1 (USA)</option>
+                                        <option value="+44">+57 (Colombia)</option>
+                                        <option value="+49">+49 (Alemania)</option>
+                                    </select>
+                                    <input type="tel" name="tel" placeholder="Enter your phone number"
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="comments"
+                                    class="block text-gray-700 text-sm font-bold mb-2">Comentarios</label>
+                                <textarea name="comments" placeholder="Tus comentarios aquí"
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <input type="submit" value="Enviar"
                                     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                                <small class="text-gray-600">or press <strong>enter</strong></small>
+                                <small class="text-gray-600">Dale click al botón o presiona
+                                    <strong>enter</strong></small>
                             </div>
                         </form>
                     </div>
+
                 </div>
             </div>
 
@@ -517,6 +846,7 @@
 
     </footer>
 
+    <script src="js/app.js"></script>
 
 </body>
 
