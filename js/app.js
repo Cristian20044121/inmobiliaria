@@ -1,3 +1,9 @@
+
+
+/**
+ * Animación de carga para la sección de header
+ */
+
 document.addEventListener("DOMContentLoaded", function() {
     const reveals = document.querySelectorAll(".animation-header");
   
@@ -15,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /**
- * Animación de la sección número dos
+ * Animación de scroll en Y 
 */
 
 const fuctionAnimationScroll = () => {
@@ -35,4 +41,4 @@ const fuctionAnimationScroll = () => {
   }
   
   window.addEventListener("scroll", fuctionAnimationScroll);
-  
+ 

@@ -10,8 +10,8 @@
 
 
 .logo>img {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
 }
 
@@ -103,36 +103,33 @@
 }
 
 
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
         ". quienes-somos quienes-somos"
-        "mision mision ."
+        ". . mision"
         ". vision vision";
-}
+} */
 
-.quienes-somos {
-    grid-area: quienes-somos;
-    z-index: 100;
-    margin-top: 20px;
-}
 
 .mision {
+  background-color: #fff8dc;
     grid-area: mision;
     margin-top: 20px;
     z-index: 100;
 
+    /* align-self:flex-end; */
 }
 
-.vision {
+/* .vision {
     grid-area: vision;
     margin-top: 20px;
     position: relative;
     z-index: 100;
-}
+} */
 
 
 .animation{
@@ -148,6 +145,18 @@
 }
 
 
+.logo-page{
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+}
+
+
+
+
+.card{
+  height: 670px;
+}
 
 
 
