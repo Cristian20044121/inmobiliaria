@@ -2,489 +2,619 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Inmobiliaria</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/logo-page.jpg" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+  <title>Inmobiliaria</title>
+  <meta name="description"
+    content="Ofrecemos servicios inmobiliarios y de bienes raíces. Encuentra apartamentos, fincas,casas y más." />
+  <meta name="keywords" content="inmobiliaria, bienes raíces, apartamentos, casas, fincas" />
+  <meta name="author" content="Pilar inmobiliario" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/logo-page.jpg" type="image/x-icon" />
 
-    <!-- librería de estilos tailwind.css  -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- librería de estilos tailwind.css  -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
-    <!-- boxicons  -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- boxicons  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="bg-gray-800 text-white p-10">
-        <div class="container mx-auto flex items-center justify-between ">
-
-            <!-- logo  -->
-            <div class="flex items-center space-x-4 lg:space-x-8 container-logo">
-                <a href="" class="animation-header visible logo">
-                    <img src="img/logo-page.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55 ">
-                </a>
-                <h1 class="text-white font-semibold text-lg lg:text-xl animation-header visible">Inmobiliaria</h1>
-            </div>
-            <nav class="nav flex flex-row gap-5 animation-header visible">
-                <a href="" class="hover:text-gray-300">Inicio</a>
-                <a href="" class="hover:text-gray-300">Nosotros</a>
-                <a href="" class="hover:text-gray-300">Productos Y Servicios</a>
-                <a href="" class="hover:text-gray-300">Clasificados</a>
-            </nav>
-        </div>
-    </header>
-
-
-    <!-- section 1 -->
-    <button id="chatBtn" class="fixed z-50 bottom-4 right-4 text-white  rounded animation-header">
-        <a href="https://wa.me/3177574544?text=Hola quiero más información" target="_blank">
-            <img src="img/zwhatssapp-x8..png" alt="" width="40">
+  <header class="bg-gray-800 text-white px-2 lg:px-10 py-10">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <!-- Logo y nombre -->
+      <div class="flex items-center space-x-4 lg:space-x-8 container-logo">
+        <a href="" class="animation-header visible logo">
+          <img src="img/logo-page.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55" />
         </a>
-    </button>
-    <section class="section-one pr-10 pb-10">
-        <!-- <div class="container-title">
-            <h1>BIENVENIDOS</h1>
-        </div> -->
-        <div class="flex">
-            <div class="trapecios mt-0 animation-header visible">
-                <div class="flex items-center">
-                    <!-- <img src="https://img.freepik.com/fotos-premium/vista-atras-amable-gerente-lider-empresarial-agradable-hablar-dar-discurso-sus-colegas_183219-8504.jpg" -->
-                    <img src="https://veracruz.uo.edu.mx/sites/default/files/pd3_PROMO-UOVER-compressed.jpeg"
-                        class="trapecio-one">
-                    <p class="text-white  font-bold shadow-lg underline text-2xl">Administracion</p>
-                </div>
+        <h1 class="text-white font-semibold text-lg lg:text-xl animation-header visible">
+          Inmobiliaria
+        </h1>
+      </div>
 
-                <div class="flex items-center">
-                    <img src="https://img.freepik.com/vector-gratis/bloque-construccion-apartamentos-arquitectura-ciudad-torre-rascacielos-dibujo-lineal-ilustracion-vectorial_98292-1035.jpg"
-                        alt="" class="trapecio-two">
-                    <p class="text-white  font-bold shadow-lg underline text-2xl">Arrendamientos</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="https://img.freepik.com/vector-gratis/ilustracion-planificacion-casa_53876-18172.jpg"
-                        alt="" class="trapecio-three ">
-                    <p class="text-white  font-bold shadow-lg underline text-2xl">Evaluamos</p>
+      <!-- Menú hamburguesa -->
+      <div class="lg:hidden animation-header">
+        <button id="toggleMenu" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
 
-                </div>
+      <!-- Menú completo -->
+      <nav id="navMenu"
+        class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 animation-header visible">
+        <a href="" class="hover:text-gray-300">Inicio</a>
+        <a href="#section-products" class="hover:text-gray-300">Productos Y Servicios</a>
+        <a href="#" class="hover:text-gray-300 modal-open">Clasificados</a>
+      </nav>
+    </div>
+  </header>
 
-                <div class="flex items-center">
-                    <img src="https://www.shutterstock.com/image-vector/regenerative-agriculture-soil-fertility-protection-600nw-2268165235.jpg"
-                        alt="" class="trapecio-four">
-                    <p class="text-white  font-bold shadow-lg underline text-2xl">Ventas</p>
-                </div>
-            </div>
 
-            <div></div>
 
+  <!-- Modal -->
+  <div id="miModal" class="modal fixed z-50">
+    <div class="modal-contenido p-5">
+      <span class="cerrar hover:bg-red-700 transition duration-300 ease-in-out cursor-pointer p-2 rounded-full"
+        id="cerrarModal">&times;</span><br><br>
+      <p>Aun estamos trabajando en nuestra web. ¡Gracias por estar aquí!</p>
+    </div>
+  </div>
+
+  <!-- section 1 -->
+  <button id="chatBtn" class="fixed z-50 bottom-8 right-0 text-white rounded-full p-3">
+    <a href="https://wa.me/3177574544?text=Hola quiero más información" target="_blank"
+      class="flex items-center justify-center">
+      <img src="img/zwhatssapp-x8..png" alt="boton de whatsapp" class="button" title="link-whatssap" />
+    </a>
+  </button>
+
+  </button>
+  <section class="section-one pr-10 pb-10">
+
+    <div class="flex ">
+      <div class="trapecios mt-0 animation-header visible">
+        <div class="flex items-center">
+          <img src="https://veracruz.uo.edu.mx/sites/default/files/pd3_PROMO-UOVER-compressed.jpeg" alt="image one"
+            class="trapecio-one" />
+          <p class="text-white font-bold shadow-lg underline text-2xl">
+            Administracion
+          </p>
         </div>
-    </section>
 
-    <!-- section 2  -->
-    <section class="pt-28 pb-20 section-two visible animation" id="section-two">
-        <div class="container mx-auto  flex flex-col p-10">
-            <div class="p-6 rounded-lg shadow-lg mision animation mb-20 ">
-                <p class="text-gray-600">En el pilar de Bienes Raíces, nos dedicamos a gestionar recursos con el fin de fabricar casas rurales prefabricadas y bloques urbanos de cuatro apartamentos para donación. tenemos una mirada puesta en la consecución de fincas destinadas a la creación de proyectos productivos tanto grupales como individuales. Además, nos comprometemos a identificar y adquirir lotes para la construcción, proporcionando así oportunidades para el desarrollo de viviendas comunitarias dasarrollando asi comunidades sostenibles.
-                    No nos limitamos solo a la construcción, también nos esforzamos por fortalecer y crear locales para el trabajo con el objetivo de impulsar la  economía social de nuestros asociados. Este fortalecimiento se traduce en la creación de puestos de trabajo y el respaldo a las  iniciativas individuales, contribuyendo de manera significativa al progreso y bienestar de la comunidad. Creemos en el poder  transformador de la vivienda y el trabajo, y nuestro compromiso es construir no solo edificaciones, sino también un futuro próspero  y sostenible para todos.</p>
-            </div>
-            <div class=" p-6 rounded-lg shadow-lg vision animation">
-                <img src="img/logo-Oasis.png" alt="" class="logo-page">
-            </div>
+        <div class="flex items-center">
+          <img
+            src="https://img.freepik.com/vector-gratis/bloque-construccion-apartamentos-arquitectura-ciudad-torre-rascacielos-dibujo-lineal-ilustracion-vectorial_98292-1035.jpg"
+            alt="image-two" class="trapecio-two" />
+          <p class="text-white font-bold shadow-lg underline text-2xl ">
+            Arrendamientos
+          </p>
         </div>
-    </section>
-
-
-    <!-- section products  -->
-    <section class="p-5 mt-12 animation">
-        <h2 class="text-4xl text-center font-bold text-gray-600">PRODUCTOS Y SERVICIOS</h2>
-        <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:gap-4 mt-12">
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
-                <img src="https://antioquia.arrendasoft.co/img/big/462x616_92daf8361297d4f39150d67295c4dcac.jpeg"
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0" >
-                <h2 class="text-lg font-bold my-2">APARTAMENTO EN ROBLEDO LA AURORA <br> <span class="text-red-500 text-sm"> <i
-                            class='bx bxs-location-plus'></i>ROBLEDO</span></h2>
-                <p class="text-green-500 font-bold">$147.000.000.00</p>
-                <p class="text-sm my-2 text-justify">Hermoso apto de 54 mts2 es un 5To piso No tiene ascensor, estrato 2, tiene Sala comedor, cocina integral mesón en mármol, 2 baños con cabina en vidrio tenolado, 3 habitaciones, parqueadero común. se paga de Administración $20 mil pesos, queda caminando a 5 minutos a la estación del metro cable. </p>
-                <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                    MÁS</a>
-            </div>
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
-                <img src="https://www.espaciourbano.com/FotosA/1275177_2.jpg"
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
-                <h2 class="text-lg font-bold my-2">Finca de recreo en Venta Urrao  <br> <span class="text-red-500 text-sm"> <i
-                            class='bx bxs-location-plus'></i>URRAO</span></h2>
-                <p class="text-green-500 font-bold">$8.100.000.000</p>
-                <p class="text-sm my-2 text-justify">Se vende 450 hectareas, 8 kilómetros antes de llegar al pueblo,3 kilometros frente a via principal. Muy buenas aguas, 60%plana y 40quebrada, Pasa por la finca el Rio Panderisco, son tres casas y un apartamento en perfecto estado y muy comodas. Establos en perfileria de hierro, se vende a $18.000.000 por hectárea tambien.
-                    </p>
-                <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                    MÁS</a>
-            </div>
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
-                <img src="https://img.mitula.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci80OWU3ODM2MS0yMzJhLTNlMmQtOWViNS00YmFlMjMwZWFjY2YvMDAzZmQ0MDU3ODQ4YTAzYzYzYzkxNTE5NTUzN2UyNmVjODE5ZWQ5NDhlYzVjZGYzNDQ1Nzc3MzdhOTQ4YjBjNC5qcGVnIiwiYnJhbmQiOiJNSVRVTEEiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJjb3ZlciJ9fX0="
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
-                <h2 class="text-lg font-bold my-2">Finca en Urrao<br> <span class="text-red-500 text-sm"> <i
-                            class='bx bxs-location-plus'></i>URRAO</span></h2>
-                <p class="text-green-500 font-bold">$190.000.000</p>
-                <p class="text-sm my-2 text-justify">Se vende finca cafetera,Cultivo descuidado, Area 20 hectareas, sobre via principal, ubicacion  vereda Sn  Matias, Urrao, Topografia Mixta, Agua veredal y de nacimiento, Casa en madera de 70 m2, Área total: 200.000 m², Año de construcción: 2021, Tipo de vivienda: Finca
-                    Tipo de operación: Compra</p>
-                    <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                    MÁS</a>
-            </div>
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
-                <img src="https://img.mitula.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci8zOGE4NTFjNC1hYzYxLTM1NDQtYTY4My1mYTkyMWZmY2QzNjQvM2I0MDAyYjlhODJjOThkZWQwMjliYWEyYmY0ZmYyMzQ3NjBjOWRmMTBmZjRiODFiNjMxOWMyYTU3YjIzYTE3Mi5qcGVnIiwiYnJhbmQiOiJNSVRVTEEiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJjb3ZlciJ9fX0="
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
-                <h2 class="text-lg font-bold my-2">FINCA EN URRAO <br> <span class="text-red-500 text-sm"> <i
-                            class='bx bxs-location-plus'></i>URRAO</span></h2>
-                <p class="text-green-500 font-bold">$350.000.000</p>
-                <p class="text-sm my-2 text-justify">se vende Finca en Urrao Antioquia vereda pabonelato, con Área de 42 hectáreas, terreno mixto, El terreno Sirve para cultivar o Para tener ganado, Tiene cultivos de lulo, agua propia y Luz. A media hora del Pueblo carrerera destapada en buenas condiciones  Entra carro pequeño, Tipo de vivienda: Finca, Tipo de operación: Compra, Año de construcción: 2021, Área total: 420.000 m²</p>
-                <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                MÁS</a>
-            </div>
-
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card ">
-                <img src="https://img.mitula.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJwcm9wZXJ0aWVzL2Q3MTI3NmYwLTg4ZTctNDFiZi05ODc1LTRmYTVjM2U3M2U0OC85OGZjOWY1Mi1jYjdlLTRmYmItOGQxZC0wNjRlM2EzM2VhY2UuanBnIiwiYnJhbmQiOiJNSVRVTEEiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJjb3ZlciJ9fX0="
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
-                <h2 class="text-lg font-bold my-2">Finca ganadera ubicada en Urrao<br> <span class="text-red-500 text-sm"> <i
-                            class='bx bxs-location-plus'></i>URRAO</span></h2>
-                <p class="text-green-500 font-bold">$700.000.000</p>
-                <p class="text-sm my-2 text-justify">En Urrao Antioquia se encuentra esta divina finca plana y húmeda para ganado en una excelente vereda a 5 horas desde Medellín Antioquia Colombia y a 20 minutos desde el parque, todo pavimentado, por sólo 700 millones de pesos para negociar, mira bien las instrucciones, las fotos para que hagamos un buen negocio.
-                    Área: 100.000 metros cuadrados aproximadamente, 10 hectáreas.
-                    Estrato 2.</p>
-                    <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                    MÁS</a>
-            </div>
-
-
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
-                <img src="https://www.doomos.com.co/images_users/8320092_1686810600.jpg"
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
-                <h2 class="text-lg font-bold my-2">
-                    VENDO LOTES DESDE 1500 M2 EN ADELANTE <br> <span class="text-red-500 tex-sm"> <i
-                            class='bx bxs-location-plus'></i>URRAO</span></h2>
-                <p class="text-green-500 font-bold">$97.500.000</p>
-                <p class="text-sm my-2 text-justify">SE VENDEN LOTES  AREA  DESDE 1.500 M2. VALE $ 97.500.000.000TANBIEN TENEMOS LOTES DESDE  2000 M2 A  2500 M2 EN  LLANOS VEREDA CERCANA AL MUNICIPIO DE URRAO (ANT). CON APERTURA DE CARRETERA A LA PARCELACIÓN DESDE LA ENTRADA PRINCIPAL. 2 FUENTES HÍDRICAS PARA ACUEDUCTO, CONEXIÓN A RED DE ENERGIA Y CONECTIVIDAD. A 10 MINUTOS DE ESTADEROS VÍA PRINCIPAL O 20 MINUTOS DE LA CABECERA MUNICIPAL.</p>
-                <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                    MÁS</a>
-            </div>
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
-                <img src="https://multimedia.metrocuadrado.com/14925-M4650777/14925-M4650777_35_h.jpg"
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
-                <h2 class="text-lg font-bold my-2">Finca en Venta <br> <span class="text-red-500 text-sm"> <i
-                            class='bx bxs-location-plus'></i>Vereda El Aguacate</span></h2>
-                <p class="text-green-500 font-bold">$1.200.000.000</p>
-                <p class="text-sm my-2 text-justify">Se vende finca de producción ubicada en la Vereda el Aguátate, a 20 minutos del Urrao, finca de 20 hectáreas, con carreteras internas, acceso hasta la finca, 100 árboles de aguacate comenzando produccion;4000 árboles de café produciendo, 15 cabezas de ganado, casa en material para reformar.</p>
-                <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                MÁS</a>
-            </div>
-
-            <!-- card  -->
-            <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
-                <img src="https://cdn.yumblin.com/images/classifieds/medium/casa-en-venta-candelaria-centro-centro-529214-351709375-rp.webp"
-                    alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0">
-                <h2 class="text-lg font-bold my-2">Casa en Venta <br> <span class="text-red-500 text-sm"> <i
-                            class='bx bxs-location-plus'></i>Candelaria Centro</span></h2>
-                <p class="text-green-500 font-bold">$570.000.000</p>
-                <p class="text-sm text-justify my-2">Casa 2do piso PH, construccion tradicional, ubicada en el barrio Boston calle Cuba como referente cercano, excelente ubicacion, aireada, iluminada.
-                    5 alcobas, 2 baños enchapados y cabinados, sala y comedor independientes, cocina con red de gas domicilario, balcon externo , zona de ropas,
-                    Piso en baldosa, cimientos en concreto, servicios publicos de EPM, acceso con calles pavimentadas.</p><br>
-                    <a href="https://wa.me/3177574544?text=Hola quiero más información"
-                    class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold" target="_blank">SABER
-                    MÁS</a>
-            </div>
-
+        <div class="flex items-center">
+          <img src="https://img.freepik.com/vector-gratis/ilustracion-planificacion-casa_53876-18172.jpg"
+            alt="image-three" class="trapecio-three" />
+          <p class="text-white font-bold shadow-lg underline text-2xl">
+            Evaluamos
+          </p>
         </div>
-    </section>
 
+        <div class="flex items-center">
+          <img
+            src="https://www.shutterstock.com/image-vector/regenerative-agriculture-soil-fertility-protection-600nw-2268165235.jpg"
+            alt="image-four" class="trapecio-four" />
+          <p class="text-white font-bold shadow-lg underline text-2xl">
+            Ventas
+          </p>
+        </div>
+      </div>
 
+      <div></div>
+    </div>
+  </section>
 
+  <!-- section 2  -->
+  <section class="pt-28 pb-20 section-two visible animation" id="section-two">
+    <div class="container mx-auto flex flex-col p-10">
+      <div class="p-6 rounded-lg shadow-lg mision animation mb-20">
+        <p class="text-gray-600">
+          En el pilar de Bienes Raíces, nos dedicamos a gestionar recursos con
+          el fin de fabricar casas rurales prefabricadas y bloques urbanos de
+          cuatro apartamentos para donación. tenemos una mirada puesta en la
+          consecución de fincas destinadas a la creación de proyectos
+          productivos tanto grupales como individuales. Además, nos
+          comprometemos a identificar y adquirir lotes para la construcción,
+          proporcionando así oportunidades para el desarrollo de viviendas
+          comunitarias dasarrollando asi comunidades sostenibles. No nos
+          limitamos solo a la construcción, también nos esforzamos por
+          fortalecer y crear locales para el trabajo con el objetivo de
+          impulsar la economía social de nuestros asociados. Este
+          fortalecimiento se traduce en la creación de puestos de trabajo y el
+          respaldo a las iniciativas individuales, contribuyendo de manera
+          significativa al progreso y bienestar de la comunidad. Creemos en el
+          poder transformador de la vivienda y el trabajo, y nuestro
+          compromiso es construir no solo edificaciones, sino también un
+          futuro próspero y sostenible para todos.
+        </p>
+      </div>
+      <div class="p-6 rounded-lg shadow-lg vision animation">
+        <img src="img/logo-Oasis.png" alt="" class="logo-page" />
+      </div>
+    </div>
+  </section>
+
+  <div id="section-products"></div>
+  <!-- section products  -->
+  <section class="p-5 mt-12 animation">
+    <h2 class="text-4xl text-center font-bold text-gray-600">
+      PRODUCTOS Y SERVICIOS
+    </h2>
+    <div class="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center lg:gap-4 mt-12">
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img src="https://antioquia.arrendasoft.co/img/big/462x616_92daf8361297d4f39150d67295c4dcac.jpeg" alt=""
+          class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          APARTAMENTO EN ROBLEDO LA AURORA <br />
+          <span class="text-red-500 text-sm">
+            <i class="bx bxs-location-plus"></i>ROBLEDO</span>
+        </h2>
+        <p class="text-green-500 font-bold">$147.000.000.00</p>
+        <p class="text-sm my-2 text-justify">
+          Hermoso apto de 54 mts2 es un 5To piso No tiene ascensor, estrato 2,
+          tiene Sala comedor, cocina integral mesón en mármol, 2 baños con
+          cabina en vidrio tenolado, 3 habitaciones, parqueadero común. se
+          paga de Administración $20 mil pesos, queda caminando a 5 minutos a
+          la estación del metro cable.
+        </p>
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img src="https://www.espaciourbano.com/FotosA/1275177_2.jpg" alt=""
+          class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          Finca de recreo en Venta Urrao <br />
+          <span class="text-red-500 text-sm">
+            <i class="bx bxs-location-plus"></i>URRAO</span>
+        </h2>
+        <p class="text-green-500 font-bold">$8.100.000.000</p>
+        <p class="text-sm my-2 text-justify">
+          Se vende 450 hectareas, 8 kilómetros antes de llegar al pueblo,3
+          kilometros frente a via principal. Muy buenas aguas, 60%plana y
+          40quebrada, Pasa por la finca el Rio Panderisco, son tres casas y un
+          apartamento en perfecto estado y muy comodas. Establos en perfileria
+          de hierro, se vende a $18.000.000 por hectárea tambien.
+        </p>
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img
+          src="https://img.mitula.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci80OWU3ODM2MS0yMzJhLTNlMmQtOWViNS00YmFlMjMwZWFjY2YvMDAzZmQ0MDU3ODQ4YTAzYzYzYzkxNTE5NTUzN2UyNmVjODE5ZWQ5NDhlYzVjZGYzNDQ1Nzc3MzdhOTQ4YjBjNC5qcGVnIiwiYnJhbmQiOiJNSVRVTEEiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJjb3ZlciJ9fX0="
+          alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          Finca en Urrao<br />
+          <span class="text-red-500 text-sm">
+            <i class="bx bxs-location-plus"></i>URRAO</span>
+        </h2>
+        <p class="text-green-500 font-bold">$190.000.000</p>
+        <p class="text-sm my-2 text-justify">
+          Se vende finca cafetera,Cultivo descuidado, Area 20 hectareas, sobre
+          via principal, ubicacion vereda Sn Matias, Urrao, Topografia Mixta,
+          Agua veredal y de nacimiento, Casa en madera de 70 m2, Área total:
+          200.000 m², Año de construcción: 2021, Tipo de vivienda: Finca Tipo
+          de operación: Compra
+        </p>
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img
+          src="https://img.mitula.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJpbmdlc3Rlci8zOGE4NTFjNC1hYzYxLTM1NDQtYTY4My1mYTkyMWZmY2QzNjQvM2I0MDAyYjlhODJjOThkZWQwMjliYWEyYmY0ZmYyMzQ3NjBjOWRmMTBmZjRiODFiNjMxOWMyYTU3YjIzYTE3Mi5qcGVnIiwiYnJhbmQiOiJNSVRVTEEiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJjb3ZlciJ9fX0="
+          alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          FINCA EN URRAO <br />
+          <span class="text-red-500 text-sm">
+            <i class="bx bxs-location-plus"></i>URRAO</span>
+        </h2>
+        <p class="text-green-500 font-bold">$350.000.000</p>
+        <p class="text-sm my-2 text-justify">
+          se vende Finca en Urrao Antioquia vereda pabonelato, con Área de 42
+          hectáreas, terreno mixto, El terreno Sirve para cultivar o Para
+          tener ganado, Tiene cultivos de lulo, agua propia y Luz. A media
+          hora del Pueblo carrerera destapada en buenas condiciones Entra
+          carro pequeño, Tipo de vivienda: Finca, Tipo de operación: Compra,
+          Año de construcción: 2021, Área total: 420.000 m²
+        </p>
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img
+          src="https://img.mitula.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1iYWNrZW5kLWIyYi1pbWFnZXMiLCJrZXkiOiJwcm9wZXJ0aWVzL2Q3MTI3NmYwLTg4ZTctNDFiZi05ODc1LTRmYTVjM2U3M2U0OC85OGZjOWY1Mi1jYjdlLTRmYmItOGQxZC0wNjRlM2EzM2VhY2UuanBnIiwiYnJhbmQiOiJNSVRVTEEiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJjb3ZlciJ9fX0="
+          alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          Finca ganadera ubicada en Urrao<br />
+          <span class="text-red-500 text-sm">
+            <i class="bx bxs-location-plus"></i>URRAO</span>
+        </h2>
+        <p class="text-green-500 font-bold">$700.000.000</p>
+        <p class="text-sm my-2 text-justify">
+          En Urrao Antioquia se encuentra esta divina finca plana y húmeda
+          para ganado en una excelente vereda a 5 horas desde Medellín
+          Antioquia Colombia y a 20 minutos desde el parque, todo pavimentado,
+          por sólo 700 millones de pesos para negociar, mira bien las
+          instrucciones, las fotos para que hagamos un buen negocio. Área:
+          100.000 metros cuadrados aproximadamente, 10 hectáreas. Estrato 2.
+        </p>
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img src="https://www.doomos.com.co/images_users/8320092_1686810600.jpg" alt=""
+          class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          VENDO LOTES DESDE 1500 M2 EN ADELANTE <br />
+          <span class="text-red-500 tex-sm">
+            <i class="bx bxs-location-plus"></i>URRAO</span>
+        </h2>
+        <p class="text-green-500 font-bold">$97.500.000</p>
+        <p class="text-sm my-2 text-justify">
+          SE VENDEN LOTES AREA DESDE 1.500 M2. VALE $ 97.500.000.000TANBIEN
+          TENEMOS LOTES DESDE 2000 M2 A 2500 M2 EN LLANOS VEREDA CERCANA AL
+          MUNICIPIO DE URRAO (ANT). CON APERTURA DE CARRETERA A LA PARCELACIÓN
+          DESDE LA ENTRADA PRINCIPAL. 2 FUENTES HÍDRICAS PARA ACUEDUCTO,
+          CONEXIÓN A RED DE ENERGIA Y CONECTIVIDAD. A 10 MINUTOS DE ESTADEROS
+          VÍA PRINCIPAL O 20 MINUTOS DE LA CABECERA MUNICIPAL.
+        </p>
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img src="https://multimedia.metrocuadrado.com/14925-M4650777/14925-M4650777_35_h.jpg" alt=""
+          class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          Finca en Venta <br />
+          <span class="text-red-500 text-sm">
+            <i class="bx bxs-location-plus"></i>Vereda El Aguacate</span>
+        </h2>
+        <p class="text-green-500 font-bold">$1.200.000.000</p>
+        <p class="text-sm my-2 text-justify">
+          Se vende finca de producción ubicada en la Vereda el Aguátate, a 20
+          minutos del Urrao, finca de 20 hectáreas, con carreteras internas,
+          acceso hasta la finca, 100 árboles de aguacate comenzando
+          produccion;4000 árboles de café produciendo, 15 cabezas de ganado,
+          casa en material para reformar.
+        </p>
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+
+      <!-- card  -->
+      <div class="lg:w-64 w-full border border-gray-300 rounded p-4 text-center mb-4 animation card">
+        <img
+          src="https://cdn.yumblin.com/images/classifieds/medium/casa-en-venta-candelaria-centro-centro-529214-351709375-rp.webp"
+          alt="" class="w-full h-40 object-cover rounded mb-2 lg:mb-0" />
+        <h2 class="text-lg font-bold my-2">
+          Casa en Venta <br />
+          <span class="text-red-500 text-sm">
+            <i class="bx bxs-location-plus"></i>Candelaria Centro</span>
+        </h2>
+        <p class="text-green-500 font-bold">$570.000.000</p>
+        <p class="text-sm text-justify my-2">
+          Casa 2do piso PH, construccion tradicional, ubicada en el barrio
+          Boston calle Cuba como referente cercano, excelente ubicacion,
+          aireada, iluminada. 5 alcobas, 2 baños enchapados y cabinados, sala
+          y comedor independientes, cocina con red de gas domicilario, balcon
+          externo , zona de ropas, Piso en baldosa, cimientos en concreto,
+          servicios publicos de EPM, acceso con calles pavimentadas.
+        </p>
+        <br />
+        <a href="https://wa.me/3177574544?text=Hola quiero más información"
+          class="block w-full lg:w-32 mx-auto bg-green-500 text-white rounded py-2 hover:bg-green-700 font-bold"
+          target="_blank">SABER MÁS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section four  -->
+
+  <section class="mt-12 bg-gray-200 p-10 animation">
+    <h2 class="text-4xl font-bold text-gray-800 pl-5 animation" id="products-destacados">
+      Otros Inmuebles :
+    </h2> <br>
 
     <!-- section four  -->
+    <div class="flex flex-col sm:flex-row justify-between section-four p-5 sm:p-2">
+      <div class="overflow-x-auto">
+        <table class="w-full sm:w-full md:w-full lg:w-full xl:w-full mx-auto bg-white overflow-x-auto animation">
+          <thead>
+            <tr>
+              <th class="py-2 px-4 border-b">Tipologia</th>
+              <th class="py-2 px-4 border-b">Sector/Barrio</th>
+              <th class="py-2 px-4 border-b">A. descripción</th>
+              <th class="py-2 px-4 border-b">Precio</th>
+              <th class="py-2 px-4 border-b">Código</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 px-4 border-b">Apartamento</td>
+              <td class="py-2 px-4 border-b">Robledo</td>
+              <td class="py-2 px-4 border-b">54 mts2</td>
+              <td class="py-2 px-4 border-b">$147.000.000.00</td>
+              <td class="py-2 px-4 border-b">022021</td>
+            </tr>
 
-    <section class="mt-12  bg-gray-200 p-10 animation">
-        <h2 class="text-4xl font-bold text-gray-800 pl-5 animation">Inmuebles En Oferta:</h2>
+            <tr>
+              <td class="py-2 px-4 border-b">Finca</td>
+              <td class="py-2 px-4 border-b">Urrao</td>
+              <td class="py-2 px-4 border-b">450 hectáreas</td>
+              <td class="py-2 px-4 border-b">$8.100.000.000</td>
+              <td class="py-2 px-4 border-b">022121</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Finca</td>
+              <td class="py-2 px-4 border-b">Urrao</td>
+              <td class="py-2 px-4 border-b">20 hectáreas</td>
+              <td class="py-2 px-4 border-b">$190.000.000</td>
+              <td class="py-2 px-4 border-b">022221</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Finca</td>
+              <td class="py-2 px-4 border-b">Urrao</td>
+              <td class="py-2 px-4 border-b">42 hectáreas</td>
+              <td class="py-2 px-4 border-b">$350.000.000</td>
+              <td class="py-2 px-4 border-b">022321</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Finca</td>
+              <td class="py-2 px-4 border-b">Urrao</td>
+              <td class="py-2 px-4 border-b">100.000 metros</td>
+              <td class="py-2 px-4 border-b">$700.000.000</td>
+              <td class="py-2 px-4 border-b">022421</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Lotes</td>
+              <td class="py-2 px-4 border-b">Urrao</td>
+              <td class="py-2 px-4 border-b">2500 M2</td>
+              <td class="py-2 px-4 border-b">$97.500.000</td>
+              <td class="py-2 px-4 border-b">022521</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Finca</td>
+              <td class="py-2 px-4 border-b">Vereda El Aguacate</td>
+              <td class="py-2 px-4 border-b">20 hectáreas</td>
+              <td class="py-2 px-4 border-b">$1.200.000.000</td>
+              <td class="py-2 px-4 border-b">022621</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Casa</td>
+              <td class="py-2 px-4 border-b">Candelaria Centro</td>
+              <td class="py-2 px-4 border-b">2do piso</td>
+              <td class="py-2 px-4 border-b">$570.000.000</td>
+              <td class="py-2 px-4 border-b">022721</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br> <br>
+      <div>
+        <div class="p-4 animation" id="section-ofertas">
+          <h2 class="text-2xl font-bold lg:mb-4 ">Promociones Inmuebles En oferta</h2>
+          <br>
+          <div class="overflow-x-auto">
+            <table class="bg-white border border-gray-300 rounded-lg w-full sm:w-75">
+              <thead class="bg-gray-200">
+                <tr>
+                  <th class="py-2 px-4 border-b">Promoción</th>
+                  <th class="py-2 px-4 border-b">Descuento</th>
+                  <th class="py-2 px-4 border-b">Válido Hasta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-2 px-4 border-b"></td>
+                  <td class="py-2 px-4 border-b"></td>
+                  <td class="py-2 px-4 border-b"></td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b"></td>
+                  <td class="py-2 px-4 border-b"></td>
+                  <td class="py-2 px-4 border-b"></td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b"></td>
+                  <td class="py-2 px-4 border-b"></td>
+                  <td class="py-2 px-4 border-b"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-        <!-- section four  -->
-        <div class="flex flex-col sm:flex-row  justify-between section-four p-5">
+        <div class="pt-4 flex-col justify-center animation-header">
+          <div class="w-50 animation">
+            <div class="bg-gray-800 text-white p-4 mb-4">
+              <h1 class="text-2xl font-bold">CONTACTANOS AHORA</h1>
+              <h3 class="text-sm">Con excelente atención al cliente!</h3>
+            </div>
 
-            <div class="overflow-x-auto">
-                <table class="w-full sm:w-5/6 md:w-4/6 lg:w-3/6 xl:w-2/6 mx-auto bg-white table-auto animation">
-                  <thead>
-                    <tr>
-                      <th class="py-2 px-4 border-b">Tipologia</th>
-                      <th class="py-2 px-4 border-b">Sector/Barrio</th>
-                      <th class="py-2 px-4 border-b">A. descripción</th>
-                      <th class="py-2 px-4 border-b">Precio</th>
-                      <th class="py-2 px-4 border-b">Código</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="py-2 px-4 border-b">Apartamento</td>
-                      <td class="py-2 px-4 border-b">Robledo</td>
-                      <td class="py-2 px-4 border-b">54 mts2</td>
-                      <td class="py-2 px-4 border-b">$$147.000.000.00</td>
-                      <td class="py-2 px-4 border-b">022021</td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="py-2 px-4 border-b">Finca</td>
-                        <td class="py-2 px-4 border-b">Urrao</td>
-                        <td class="py-2 px-4 border-b">450 hectáreas/td>
-                        <td class="py-2 px-4 border-b">$8.100.000.000</td>
-                        <td class="py-2 px-4 border-b">022121</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b">Finca</td>
-                        <td class="py-2 px-4 border-b">Urrao</td>
-                        <td class="py-2 px-4 border-b">20 hectáreas</td>
-                        <td class="py-2 px-4 border-b">$190.000.000</td>
-                        <td class="py-2 px-4 border-b">022221</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b">Finca</td>
-                        <td class="py-2 px-4 border-b">Urrao</td>
-                        <td class="py-2 px-4 border-b">42 hectáreas</td>
-                        <td class="py-2 px-4 border-b">$350.000.000</td>
-                        <td class="py-2 px-4 border-b">022321</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b">Finca</td>
-                        <td class="py-2 px-4 border-b">Urrao</td>
-                        <td class="py-2 px-4 border-b">100.000 metros</td>
-                        <td class="py-2 px-4 border-b">$700.000.000</td>
-                        <td class="py-2 px-4 border-b">022421</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b">Lotes</td>
-                        <td class="py-2 px-4 border-b">Urrao</td>
-                        <td class="py-2 px-4 border-b">2500 M2</td>
-                        <td class="py-2 px-4 border-b">$97.500.000</td>
-                        <td class="py-2 px-4 border-b">022521</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b">Finca</td>
-                        <td class="py-2 px-4 border-b">Vereda El Aguacate</td>
-                        <td class="py-2 px-4 border-b">20 hectáreas</td>
-                        <td class="py-2 px-4 border-b">$1.200.000.000</td>
-                        <td class="py-2 px-4 border-b">022621</td>
-                      </tr>
-                      <tr>
-                        <td class="py-2 px-4 border-b">Casa</td>
-                        <td class="py-2 px-4 border-b">Vereda El Aguacate</td>
-                        <td class="py-2 px-4 border-b">2do piso</td>
-                        <td class="py-2 px-4 border-b">$5</td>
-                        <td class="py-2 px-4 border-b">022721</td>
-                      </tr>
-
-                  </tbody>
-                </table>
+            <form action="https://formspree.io/f/xoqgvlyq" method="POST"
+              class=" form bg-white shadow-md rounded px-4 pt-6 pb-8 mb-4 animation">
+              <div class="mb-4">
+                <label for="full_name" class="block text-gray-700 text-sm font-bold mb-2">Nombre Completo</label>
+                <input type="text" name="full_name" placeholder="Juan Gomez"
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
-              
 
-            <div>
-                <div class="p-4 animation">
-                    <h1 class="text-2xl font-bold mb-4">Promociones Inmobiliarias</h1>
-                  
-                    <div class="overflow-x-auto">
-                      <table class="bg-white border border-gray-300 rounded-lg w-full sm:w-75">
-                        <thead class="bg-gray-200">
-                          <tr>
-                            <th class="py-2 px-4 border-b">Promoción</th>
-                            <th class="py-2 px-4 border-b">Descuento</th>
-                            <th class="py-2 px-4 border-b">Válido Hasta</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="py-2 px-4 border-b"> </td>
-                            <td class="py-2 px-4 border-b"></td>
-                            <td class="py-2 px-4 border-b"></td>
-                          </tr>
-                          <tr>
-                            <td class="py-2 px-4 border-b"></td>
-                            <td class="py-2 px-4 border-b"></td>
-                            <td class="py-2 px-4 border-b"></td>
-                          </tr>
-                          <tr>
-                            <td class="py-2 px-4 border-b"></td>
-                            <td class="py-2 px-4 border-b"></td>
-                            <td class="py-2 px-4 border-b"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input type="email" name="email" placeholder="juan123@example.com"
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+              </div>
+
+              <div class="mb-4">
+                <label for="tel" class="block text-gray-700 text-sm font-bold mb-2">Número De Teléfono</label>
+                <div class="flex flex-col items-center sm:flex-row sm:justify-between border rounded w-full">
+                  <select name="country_code"
+                    class="border-r appearance-none py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2 sm:mb-0 sm:mr-2">
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+44">+44 (Reino Unido)</option>
+                    <option value="+51">+51 (Perú)</option>
+                    <option value="+52">+52 (México)</option>
+                    <option value="+54">+54 (Argentina)</option>
+                    <option value="+55">+55 (Brasil)</option>
+                    <option value="+56">+56 (Chile)</option>
+                    <option value="+57">+57 (Colombia)</option>
+                    <option value="+58">+58 (Venezuela)</option>
+                    <option value="+591">+591 (Bolivia)</option>
+                    <option value="+592">+592 (Guyana)</option>
+                    <option value="+593">+593 (Ecuador)</option>
+                    <option value="+594">+594 (Guayana Francesa)</option>
+                    <option value="+595">+595 (Paraguay)</option>
+                    <option value="+597">+597 (Surinam)</option>
+                    <option value="+598">+598 (Uruguay)</option>
+                    <option value="+502">+502 (Guatemala)</option>
+                    <option value="+503">+503 (El Salvador)</option>
+                    <option value="+504">+504 (Honduras)</option>
+                    <option value="+505">+505 (Nicaragua)</option>
+                    <option value="+506">+506 (Costa Rica)</option>
+                    <option value="+507">+507 (Panamá)</option>
+                  </select>
+                  <input type="tel" name="tel" placeholder="Enter your phone number"
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                 </div>
-            
+              </div>
 
-                <div class="pt-4 flex-col justify-center">
-                    <div class="w-50 animation">
-                        <div class="bg-gray-800 text-white p-4 mb-4">
-                            <h1 class="text-2xl font-bold">CONTACTANOS AHORA</h1>
-                            <h3 class="text-sm">Con excelente atención al cliente!</h3>
-                        </div>
+              <div class="mb-4">
+                <label for="comments" class="block text-gray-700 text-sm font-bold mb-2">Comentarios</label>
+                <textarea name="comments" placeholder="Tus comentarios aquí"
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+              </div>
 
-                        <form  action="https://formspree.io/f/myyrzpbq"  method="POST" class="bg-white shadow-md rounded px-4 pt-6 pb-8 mb-4 animation">
-                            <div class="mb-4">
-                                <label for="full_name" class="block text-gray-700 text-sm font-bold mb-2">Nombre
-                                    Completo</label>
-                                <input type="text" name="full_name" placeholder="Cristian caro"
-                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
-                                <input type="email" name="email" placeholder="cristian@example.com"
-                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="tel" class="block text-gray-700 text-sm font-bold mb-2">Número De
-                                    Teléfono</label>
-                                <div class="flex items-center border rounded w-full">
-                                    <select name="country_code"
-                                        class="border-r appearance-none py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                                        <option value="+1">+1 (USA)</option>
-                                        <option value="+44">+57 (Colombia)</option>
-                                        <option value="+49">+49 (Alemania)</option>
-                                    </select>
-                                    <input type="tel" name="tel" placeholder="Enter your phone number"
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="comments"
-                                    class="block text-gray-700 text-sm font-bold mb-2">Comentarios</label>
-                                <textarea name="comments" placeholder="Tus comentarios aquí"
-                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
-                            </div>
-
-                            <div class="mb-4">
-                                <input type="submit" value="Enviar"
-                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                                <small class="text-gray-600">Dale click al botón o presiona
-                                    <strong>enter</strong></small>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-
-
-
+              <div class="mb-4">
+                <input type="submit" value="Enviar"
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" />
+                <small class="text-gray-600">Dale click al botón o presiona
+                  <strong>enter</strong></small>
+              </div>
+            </form><br><br>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
 
-    </section>
-
-
-
-    <!-- <h2 class="text-gray-600 text-2xl">Ofertas en inmuebles:</h2> -->
-
-    <footer class="">
-        <div class="footer p-5">
-            <div class="flex items-center space-x-4 lg:space-x-8 container-logo">
-                <a href="">
-                    <img src="img/logo-page.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55">
-                </a>
-                <h1 class="text-white font-semibold text-lg lg:text-xl">Inmobiliaria</h1>
-            </div>
-            <div class="contain">
-                <div class="col">
-                    <h1>Nuetsra Compañia</h1>
-                    <ul>
-                        <li>Nosotros</li>
-                        <li>Misión</li>
-                        <li>visión</li>
-                        <li>Servicios</li>
-                        <li>Productos</li>
-                        <li>Clasicados</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h1>Productos</h1>
-                    <ul>
-                        <li>Todos los productos</li>
-                        <li>Destacados</li>
-                        <li>Bajo Precio</li>
-                        <li>Alto Precio</li>
-                        <li>Promociones </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h1>Servicios</h1>
-                    <ul>
-                        <li>Todos los servicios</li>
-                        <li>De calidad</li>
-                        <li>Destacados</li>
-                        <li>Economicos</li>
-                        <li>Promociones</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h1>Información relevante</h1>
-                    <ul>
-                        <li>Portafolio</li>
-                        <li>Objetivos 2024</li>
-                        <li>Como trabajamos</li>
-                        <li>Nuestro equipo</li>
-                        <li>Aliados</li>
-                        <li>Asociados</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h1>Contacto</h1>
-                    <ul>
-                        <li>whatssap</li>
-                        <li>Email: inmobiliarias234@gmail</li>
-                        <li>Tel: 1088022</li>
-                    </ul>
-                </div>
-                <div class="col social">
-                    <h1>Social</h1>
-                    <ul>
-                        <li><i class='bx bxl-facebook-square text-2xl'></i></li>
-                        <li><i class='bx bxl-instagram-alt text-2xl'></i></li>
-                        <li><i class='bx bxl-twitter text-2xl'></i></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <p class="text-sm text-gray-500">
-                © 2022 Inmobiliaria. Todos los derechos reservados. El contenido de este sitio web está protegido por
-                derechos de autor y otras leyes de propiedad intelectual. Queda prohibida la reproducción, distribución,
-                o transmisión de cualquier parte del contenido sin el permiso previo por escrito de inmobiliaria. Para
-                obtener más información, comuníquese con nosotros en <a href="mailto:inmobiliarias@tuempresa.com"
-                    class="text-blue-500 hover:underline">inmobiliarias@tuempresa.com</a>.
-            </p>
+  <footer class="">
+    <div class="footer p-5">
+      <div class="flex items-center space-x-4 lg:space-x-8 container-logo">
+        <a href="">
+          <img src="img/logo-page.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55" />
+        </a>
+        <h1 class="text-white font-semibold text-lg lg:text-xl">
+          Inmobiliaria
+        </h1>
+      </div>
+      <div class="contain">
+        <div class="col">
+          <h1>Nuetsra Compañia</h1>
+          <ul>
+            <li><a href="#" class="modal-open">Nosotros</a></li>
+            <li><a href="#" class="modal-open">Misión</a></li>
+            <li><a href="#" class="modal-open">visión</a></li>
+            <li><a href="#" class="modal-open">Servicios</a></li>
+            <li><a href="#section-products">Productos</a></li>
+            <li><a href="#" class="modal-open">Clasificados</a></li>
+          </ul>
         </div>
+        <div class="col">
+          <h1>Productos</h1>
+          <ul>
+            <li> <a href="#section-products">Todos los productos</a></li>
+            <li><a href="#products-destacados"> Destacados </a></li>
+            <li><a href="#" class="modal-open">Bajo Precio </a></li>
+            <li><a href="#" class="modal-open">Alto Precio</a></li>
+            <li><a href="#section-ofertas"> Promociones </a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Servicios</h1>
+          <ul>
+            <li><a href="#section-products">Todos los servicios</a></li>
+            <li><a href="#" class="modal-open">De calidad</a></li>
+            <li><a href="#products-destacados"> Destacados </a></li>
+            <li><a href="#" class="modal-open">Economicos</a></li>
+            <li><a href="#section-ofertas"> Promociones </a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Información relevante</h1>
+          <ul>
+            <li><a href="#" class="modal-open">Portafolio </a></li>
+            <li><a href="#" class="modal-open">Objetivos 2024</a></li>
+            <li><a href="#" class="modal-open">Como trabajamos</a></li>
+            <li><a href="#" class="modal-open">Nuestro equipo </a></li>
+            <li><a href="#" class="modal-open">Aliados </a></li>
+            <li><a href="#" class="modal-open">Asociados </a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Contacto</h1>
+          <ul>
+            <li> <a href="https://wa.me/3177574544?text=Hola quiero más información"> whatssap </a></li>
+            <li><a
+                href="mailto:oasisdesuenos@gmail.com?subject=Solicitud de información&body=Hola, estoy interesado en obtener más información.">
+                Email: oasisdesuenos@gmail</a></li>
+            <li><a href="tel:+573177574544">Tel: +573177574544</a></li>
+          </ul>
+        </div>
+        <div class="col social">
+          <h1>Social</h1>
+          <ul>
+            <li><i class="bx bxl-facebook-square text-2xl"></i></li>
+            <li><i class="bx bxl-instagram-alt text-2xl"></i></li>
+            <li><i class="bx bxl-twitter text-2xl"></i></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <p class="text-sm text-gray-500">
+        © 2022 Inmobiliaria. Todos los derechos reservados. El contenido de
+        este sitio web está protegido por derechos de autor y otras leyes de
+        propiedad intelectual. Queda prohibida la reproducción, distribución,
+        o transmisión de cualquier parte del contenido sin el permiso previo
+        por escrito de inmobiliaria. Para obtener más información, comuníquese
+        con nosotros en
+        <a href="mailto:inmobiliarias@tuempresa.com"
+          class="text-blue-500 hover:underline">oasisdesuenos@gmail.com</a>.
+      </p>
+    </div>
+  </footer>
 
-    </footer>
-
-    <script src="js/app.js"></script>
-
+  <script src="js/app.js"></script>
 </body>
 
 </html>
