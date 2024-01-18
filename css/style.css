@@ -217,6 +217,24 @@ th:last-of-type {
   cursor: pointer;
 }
 
+
+/* nosotros  */
+
+.section-nosotros-one{
+  background: url(../img/obreros-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-nosotros-two{
+  background: url(../img/obreros-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 /* footer */
 
 .footer {

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria - Nosotros</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/logo-page.jpg" type="image/x-icon" />
+
+    <!-- librería de estilos tailwind.css  -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- boxicons  -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="bg-gray-800 text-white px-2 lg:px-10 py-10">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <!-- Logo y nombre -->
+            <div class="flex items-center space-x-4 lg:space-x-8 container-logo">
+                <a href="" class="animation-header visible logo">
+                    <img src="img/logo-page.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55" />
+                </a>
+                <h1 class="text-white font-semibold text-lg lg:text-xl animation-header visible">
+                    Inmobiliaria
+                </h1>
+            </div>
+
+            <!-- Menú hamburguesa -->
+            <div class="lg:hidden animation-header">
+                <button id="toggleMenu" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menú completo -->
+            <nav id="navMenu"
+                class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 animation-header visible">
+                <a href="" class="hover:text-gray-300">Inicio</a>
+                <a href="nosotros.html" class="hover:text-gray-300">Nosotros</a>
+                <a href="#section-products" class="hover:text-gray-300">Productos Y Servicios</a>
+                <a href="#" class="hover:text-gray-300 modal-open">Clasificados</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Modal -->
+    <div id="miModal" class="modal fixed z-50">
+        <div class="modal-contenido p-5">
+            <span class="cerrar hover:bg-red-700 transition duration-300 ease-in-out cursor-pointer p-2 rounded-full"
+                id="cerrarModal">&times;</span><br><br>
+            <p>Aun estamos trabajando en nuestra web. ¡Gracias por estar aquí!</p>
+        </div>
+    </div>
+
+    <!-- section 1 -->
+    <button id="chatBtn" class="fixed z-50 bottom-8 right-0 text-white rounded-full p-3 animation-header">
+        <a href="https://wa.me/3177574544?text=Hola quiero más información" target="_blank"
+            class="flex items-center justify-center">
+            <img src="img/zwhatssapp-x8..png" alt="boton de whatsapp" class="button" title="link-whatssap" />
+        </a>
+    </button>
+
+
+
+    <section class="h-96 section-nosotros-one">
+        <h1>ola</h1>
+    </section>
+
+    <section class="h-96 section-nosotros-two">
+        <h1>ola</h1>
+    </section>
+
+
+
+
+
+    <footer class="">
+        <div class="footer p-5">
+            <div class="flex items-center space-x-4 lg:space-x-8 container-logo">
+                <a href="">
+                    <img src="img/logo-page.jpg" alt="Logo" class="w-12 h-12 rounded-full filter brightness-55" />
+                </a>
+                <h1 class="text-white font-semibold text-lg lg:text-xl">
+                    Inmobiliaria
+                </h1>
+            </div>
+            <div class="contain">
+                <div class="col">
+                    <h1>Nuestra Compañia</h1>
+                    <ul>
+                        <li><a href="#" class="modal-open">Nosotros</a></li>
+                        <li><a href="#" class="modal-open">Misión</a></li>
+                        <li><a href="#" class="modal-open">visión</a></li>
+                        <li><a href="#" class="modal-open">Servicios</a></li>
+                        <li><a href="#section-products">Productos</a></li>
+                        <li><a href="#" class="modal-open">Clasificados</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Productos</h1>
+                    <ul>
+                        <li> <a href="#section-products">Todos los productos</a></li>
+                        <li><a href="#products-destacados"> Destacados </a></li>
+                        <li><a href="#" class="modal-open">Bajo Precio </a></li>
+                        <li><a href="#" class="modal-open">Alto Precio</a></li>
+                        <li><a href="#section-ofertas"> Promociones </a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Servicios</h1>
+                    <ul>
+                        <li><a href="#section-products">Todos los servicios</a></li>
+                        <li><a href="#" class="modal-open">De calidad</a></li>
+                        <li><a href="#products-destacados"> Destacados </a></li>
+                        <li><a href="#" class="modal-open">Economicos</a></li>
+                        <li><a href="#section-ofertas"> Promociones </a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Información relevante</h1>
+                    <ul>
+                        <li><a href="#" class="modal-open">Portafolio </a></li>
+                        <li><a href="#" class="modal-open">Objetivos 2024</a></li>
+                        <li><a href="#" class="modal-open">Como trabajamos</a></li>
+                        <li><a href="#" class="modal-open">Nuestro equipo </a></li>
+                        <li><a href="#" class="modal-open">Aliados </a></li>
+                        <li><a href="#" class="modal-open">Asociados </a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Contacto</h1>
+                    <ul>
+                        <li> <a href="https://wa.me/3177574544?text=Hola quiero más información"> whatssap </a></li>
+                        <li><a
+                                href="mailto:oasisdesuenos@gmail.com?subject=Solicitud de información&body=Hola, estoy interesado en obtener más información.">
+                                Email: oasisdesuenos@gmail</a></li>
+                        <li><a href="tel:+573177574544">Tel: +573177574544</a></li>
+                    </ul>
+                </div>
+                <div class="col social">
+                    <h1>Social</h1>
+                    <ul>
+                        <li><i class="bx bxl-facebook-square text-2xl"></i></li> <br>
+                        <li><i class="bx bxl-instagram-alt text-2xl"></i></li><br>
+                        <li><i class="bx bxl-twitter text-2xl"></i></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <p class="text-sm text-gray-500">
+                © 2022 Inmobiliaria. Todos los derechos reservados. El contenido de
+                este sitio web está protegido por derechos de autor y otras leyes de
+                propiedad intelectual. Queda prohibida la reproducción, distribución,
+                o transmisión de cualquier parte del contenido sin el permiso previo
+                por escrito de inmobiliaria. Para obtener más información, comuníquese
+                con nosotros en
+                <a href="mailto:inmobiliarias@tuempresa.com"
+                    class="text-blue-500 hover:underline">oasisdesuenos@gmail.com</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
