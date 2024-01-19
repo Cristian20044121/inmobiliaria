@@ -234,7 +234,32 @@ th:last-of-type {
   background-position: center;
 }
 
-
+.section-coffee{
+  /* background: url('https://imgscf.slidemembers.com/docs/1/1/214/free_google_slides_templates_-_fragrant_coffee_beans_213998.jpg'); */
+  height: 1240px;
+  background-size: cover;
+  background-position: center;
+}
+.section-coffee > .info-title{
+  background-color: rgb(224, 191, 150);
+  height: 300px;
+}
+.container-info-coffee{
+  width: 80%;
+}
+.info-container-coffee  .title-color{
+  color: rgb(61, 27, 9);
+}
+.container-info-coffee-beneficios > img{
+  rotate: 15deg;
+  margin-top: 40px;
+}
+.section-coffee-container-one{
+  background-color: rgb(224, 191, 150);
+  height:250px;
+  width: 100%;
+  bottom: -100px;
+}
 /* footer */
 
 .footer {
